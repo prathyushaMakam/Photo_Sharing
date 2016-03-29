@@ -20,27 +20,6 @@ public class MainActivity extends AppCompatActivity {
         mnewPotHole = (Button) this.findViewById(R.id.NewItemButton);
         mlistView = (Button) this.findViewById(R.id.ListViewButton);
         mmapView = (Button) this.findViewById(R.id.MapViewButton);
-
-      /*  String url = "http://i.imgur.com/Nwk25LA.jpg";
-        mImageView = (ImageView) findViewById(R.id.image);
-
-        ImageRequest imgRequest = new ImageRequest(url,
-                new Response.Listener<Bitmap>() {
-                    @Override
-                    public void onResponse(Bitmap response) {
-                        mImageView.setImageBitmap(response);
-                    }
-                }, 0, 0, ImageView.ScaleType.FIT_XY, Bitmap.Config.ARGB_8888, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                mImageView.setBackgroundColor(Color.parseColor("#ff0000"));
-                error.printStackTrace();
-            }
-        });
-
-        Volley.newRequestQueue(this).add(imgRequest);*/
-
-
     }
 
     public void NewItem(View view) {
@@ -49,9 +28,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ListView(View view) {
+        Intent potholeList = new Intent(this,PotholeListActivity.class);
+        startActivity(potholeList);
     }
 
     public void MapView(View view) {
+        Intent MapViewIntent = new Intent(this,MapViewActivity.class);
+        startActivity(MapViewIntent);
     }
 
 

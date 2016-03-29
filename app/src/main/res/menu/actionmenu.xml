@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Home -->
+    <item
+        android:id="@+id/action_Home"
+        android:showAsAction="always"
+        android:title="Home"
+        tools:ignore="AppCompatResource" />
+    <!--Add New ppothole-->
+    <item
+        android:id="@+id/action_AddNewPothole"
+        android:showAsAction="always"
+        android:title="Add New Pothole"
+        tools:ignore="AppCompatResource" />
+    <!-- List View -->
+    <item
+        android:id="@+id/action_ListView"
+        android:showAsAction="always"
+        android:title="List View"
+        tools:ignore="AppCompatResource" />
+    <!-- Map View -->
+    <item
+        android:id="@+id/action_MapView"
+        android:showAsAction="always"
+        android:title="Map View"
+        tools:ignore="AppCompatResource" />
+
+</menu>
